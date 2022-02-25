@@ -13,8 +13,37 @@ The data consisted of 2 data sets:
 
 2) _Neighbourhood Indicators_ (cov_ind): The 140 neighbourhoods represent very different demographics in terms of education, income, immigrants, crowded housing, multigenerational housing, and visible minorities, which is available from the 2016 Canada Census. The concern is that any or all of these variables may point to a vulnerability of specific groups of people in getting COVID. 
 
-Data from these two datasets needed be sliced and then joined so that the neighbhour indicators could be used in a regression model to predict rates of covid cases/100 000 people.
+Data from these two datasets needed be sliced and then joined so that the neighbhour indicators could be used in a regression model to predict rates of covid cases/100 000 people. The demographic independent variables used were:
+    
+    Low Education (Low_Edu)
+    Low Income (Low_Inc)
+    Multigeneration Housing (MultiGen_House)
+    Crowded Housing (Crowded_House)
+    Immigrants (Immigrants)
+    Visibile Minorities (Vis_Minorites)
+
 
 ## This new file is included here: **covid_dataframe.csv**
 
+### Hypothesis
+
 The hypothesis for this project is that the neighbourhood indicators can be used to predict rate of positive COVID cases. If a model can be generated to predict covid cases, then it could be used for the future to quickly identify vulnerable populations for in other cities in Canada, should that demographic information be available. 
+
+
+### Results
+
+Using regression analysis, the best and most efficient model for predicting Rate of covid cases is a model that used Education, Multigenerational Housing, Crowded Housing, and Visible Minorities as independent variables. This represents 4 of the original 6 indicator variables. 73.6% of the variability is explained when all of those 4 variables are included in the model.
+
+However, each of the neighbourhood indicators could be used to predict Rate of covid cases if that was the only data available. They each have significant predictive ability, with income presenting the least amount of power (R-square = .155) and education representing the most R-square =.54).
+
+### Predicting Vulnerable and Resilient Neighbourhoods
+
+Using the model, can we predict the Rate of Covid cases for a fictitious neighbourhood that scores high on all vulnerable indicators?  Here the highest and lowest value of each variable (as gathered with the range above) was used to predict a fictitious vulnerable and resillient community. 
+
+
+**Vulnerable Community:** The predicted rate is 18 452 per 100 000 people.
+**Resilient Community:** The predicted rate is 1582 per 100 000 people.
+**Observation:** A community high on all indicator variables has a 11.6 fold increased vulnerability for Rate of covid cases. 
+
+# Conclusions
+Neighbourhoods with Low Education Levels, Multigenerational Housing, and Crowded Housing, and higher Visble minorities  all are at a greater risk for covid in the community. Risk of covid rates can be best predicted by including education levels, multigenerational housing, crowded housing, and visible minorites in the regression model.
