@@ -14,6 +14,7 @@ The data consisted of 2 data sets:
 2) _Neighbourhood Indicators_ (cov_ind): The 140 neighbourhoods represent very different demographics in terms of education, income, immigrants, crowded housing, multigenerational housing, and visible minorities, which is available from the 2016 Canada Census. The concern is that any or all of these variables may point to a vulnerability of specific groups of people in getting COVID. 
 
 Data from these two datasets needed be sliced and then joined so that the neighbhour indicators could be used in a regression model to predict rates of covid cases/100 000 people.
-This new file is included here: COVID Data Joining.csv
+
+## This new file is included here: **covid_dataframe.csv**
 
 The hypothesis for this project is that the neighbourhood indicators can be used to predict rate of positive COVID cases. If a model can be generated to predict covid cases, then it could be used for the future to quickly identify vulnerable populations for in other cities in Canada, should that demographic information be available. 
