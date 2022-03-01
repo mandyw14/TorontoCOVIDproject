@@ -1,7 +1,7 @@
 # City of Toronto COVID project 2021
 
 ## Background
-This project took data from the 2016 Canada census for the City of Toronto neighbourhood demographics and used those demographics in a model to predict case counts during the 2020 pandemic. Case counts were data collected through till the end of July 2021. 
+Not long into the pandemic, it became clear that COVID case numbers varied according to neighbourhoods in the City of Toronto, revealing hot spots and areas of the city that could be priorities. For this project, I saught to examine the case number data according to the neighbourhood. To do this, I took data from the 2016 Canada census for the City of Toronto neighbourhood demographics and used those demographics in a model to predict case counts. Case counts existed as data collected until the end of July 2021, when the data analysis was conducted. 
 
 The City of Toronto experienced a high rate of covid cases through the COVID pandemic. The rate of covid cases hit some neighbourhoods harder than others. As a result, the city made the census 2016 neighbourhood data available that provide insights into the demographics of the neighbhour that might make a neighbourhood more vulnerable. These indicators include education levels, income levels, multigenerational housing, crowded housing, immigrants, and visible minorities. 
 
